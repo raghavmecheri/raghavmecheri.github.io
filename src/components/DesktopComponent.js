@@ -21,8 +21,8 @@ class DesktopComponent extends Component {
             </div>
             <hr className="myLine"/>
             <div id = "experience">
-               <p>Currently at <a target="_blank" className = "myurl blue" href="https://binit.in">BinIt</a>, <a target="_blank" className = "myurl blue" href="https://www.paypal.com/us/home">PayPal</a>, and <a target="_blank" className = "myurl blue" href = "https://vayu.tech">Vayu</a></p>
-               <p>Previously with <a target="_blank" className = "myurl blue" href="https://freshworks.com">Freshworks</a>, <a target="_blank" className = "myurl blue" href="https://coderdojo.com">CoderDojo</a></p>
+               <p>Currently at <a target="_blank" className = "myurl blue" href="https://binit.in">BinIt</a> and <a target="_blank" className = "myurl blue" href = "https://vayu.tech">Vayu</a></p>
+               <p>Previously with <a target="_blank" className = "myurl blue" href="https://www.paypal.com/us/home">PayPal</a>, <a target="_blank" className = "myurl blue" href="https://freshworks.com">Freshworks</a> and <a target="_blank" className = "myurl blue" href="https://coderdojo.com">CoderDojo</a></p>
             </div>
             <hr className="myLine"/>
             <div id = "online">
