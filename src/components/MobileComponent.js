@@ -52,11 +52,12 @@ class MobileComponent extends Component {
                  Team Lead at <a target="_blank" className = "myurl blue" href = "https://binit.in">BinIt</a>, an AI startup focussed on solving the world's waste segregation problems<br /> <br />
                  Teaching Assistant for COMS W3101 - Programming in JavaScript with <a target="_blank" className = "myurl blue" href = "https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa">Prof. Ramana Isukapalli</a><br /> <br />
                  Actively involved in Columbia University's student led product development initiatives, with <a target="_blank" className = "myurl blue" href="https://www.lionbase.nyc/">LionBase</a>, <a target="_blank" className = "myurl blue" href="http://www.columbiaseg.org/">CSEG</a>, and <a target="_blank" className = "myurl blue" href="https://columbiainternationalventures.com/">CIV</a><br /> <br />
-                 View my courses completed, and currently being taken <a href="" className="myurl blue">here</a> <br />
+                 View my courses completed, and currently being taken <a target="_blank" href="https://docs.google.com/document/d/1t84U6M0rCwHoXMBqXBh3OmVXqOs6WBZoRKjm7NoZDT8/edit?usp=sharing" className="myurl blue">here</a> <br />
                </p>
                <br />
                <h2>Contact Me</h2>
                <p className = "content">
+                  
                  I'm always open to discussing new ideas and developments in fields both related, and unrelated to technology!<br /> <br />
                  Aside from my presence online, please feel free to drop me an email anytime at <a target="_blank" href="mailto:raghav.mecheri@columbia.edu" className ="myurl blue">raghav.mecheri@columbia.edu</a><br />
                </p>
