@@ -36,13 +36,15 @@ class MobileComponent extends Component {
                <h2>Projects</h2>
                <p className = "content">
                  <a target="_blank" className = "myurl blue" href = "https://binit.in/wasteClassify">WasteClassify</a>, an AI based automated waste segregation solution with <a target="_blank" className = "myurl blue" href = "https://binit.in">BinIt</a> <br /> <br />
+                 <a target="_blank" className = "myurl blue" href = "https://pricemydata.com">PriceMyData</a>, an online platform for crowdsourcing data valuations <br /> <br />
+                 <a target="_blank" className = "myurl blue" href = "https://github.com/raghavmecheri/GenerateRubric">GenerateRubric</a>, a solution to autogenerate grading rubrics for instructors and teaching assistants <br /> <br />
                  <a target="_blank" className = "myurl blue" href = "https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa">Porting BIM Models to low-cost Virtual Reality</a> - built @ <a target="_blank" className = "myurl blue" href="https://www.iitm.ac.in/">IIT, Madras</a> under Prof. Ashwin Mahalingam<br /><br />
                  <a target="_blank" className = "myurl blue" href="https://www.npmjs.com/package/mongopooler">MongoPooler</a>, an npm module to make MongoDB access easier and more efficient <br /> <br />
                  CubeMania, a mobile application built to help people solve the Rubik's Cube - built with Kunal Agarwal<br /> <br />
                  <a target="_blank" className = "myurl blue" href="https://github.com/LionBaseNYC/LiStartup">LiStartup</a>, an ML/AI solution to predict startup valuations - built with <a target="_blank" className = "myurl blue" href = "https://www.lionbase.nyc/">LionBase</a><br /> <br />
                  An analysis of <a target="_blank" className = "myurl blue" href = "https://github.com/raghavmecheri/SoccerAnalysis">soccer transfers</a> in order to understand if player valuations can be predicted<br /> <br />
                  <a target="_blank" className = "myurl blue" href="https://github.com/cseg-tech/nyc-housingautomation">Web application</a> to aggregate and analyse housing complaints in NYC - built with <a target="_blank" className = "myurl blue" href="http://www.columbiaseg.org/cseg-tech">CSEG Tech</a><br /> <br />
-                 <a target="_blank" className = "myurl blue" href="https://github.com/Maxusmusti/LectureHub">LectureHub</a>, a web based note-sharing platform for students - built with Mustafa Eyeceoz, Ajit Akole & Daniel Tao<br />
+                 <a target="_blank" className = "myurl blue" href="https://github.com/Maxusmusti/LectureHub">LectureHub</a>, a web based note-sharing platform for students - built with Mustafa Eyeceoz, Ajit Akole & Daniel Tao<br /><br />
                  An <a target="_blank" className = "myurl blue" href="https://github.com/raghavmecheri/FilterSpam">NLP based classification system</a>, which is able to identify spam text messages<br /> <br />
                  MyCity, a complaint submission and management system for Indian cities - built with Kunal Agarwal <br />
                </p>
