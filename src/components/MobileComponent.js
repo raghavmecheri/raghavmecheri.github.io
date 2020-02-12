@@ -20,8 +20,8 @@ class MobileComponent extends Component {
             </div>
             <hr className="myLine"/>
             <div id = "experience">
-               <p>Currently at <a target="_blank" className = "myurl blue" href="https://binit.in">BinIt</a> and <a target="_blank" className = "myurl blue" href = "https://vayu.tech">Vayu</a></p>
-               <p>Previously with <a target="_blank" className = "myurl blue" href="https://www.paypal.com/us/home">PayPal</a>, <a target="_blank" className = "myurl blue" href="https://freshworks.com">Freshworks</a>, and <a target="_blank" className = "myurl blue" href="https://coderdojo.com">CoderDojo</a></p>
+               <p>Currently at <a target="_blank" className = "myurl blue" href="https://binit.in">BinIt</a> and <a target="_blank" className = "myurl blue" href = "https://www.microsoft.com/en-in">Microsoft</a> (Incoming)</p>
+               <p>Previously with <a target="_blank" className = "myurl blue" href = "https://vayu.tech">Vayu</a>, <a target="_blank" className = "myurl blue" href="https://www.paypal.com/us/home">PayPal</a>, <a target="_blank" className = "myurl blue" href="https://freshworks.com">Freshworks</a>, and <a target="_blank" className = "myurl blue" href="https://coderdojo.com">CoderDojo</a></p>
             </div>
             <hr className="myLine"/>
             <div id = "online">
@@ -35,6 +35,7 @@ class MobileComponent extends Component {
                <h2>Projects</h2>
                <p className = "content">
                  <a target="_blank" className = "myurl blue" href = "https://binit.in/wasteClassify">WasteClassify</a>, an AI based automated waste segregation solution with <a target="_blank" className = "myurl blue" href = "https://binit.in">BinIt</a> <br /> <br />
+                 <a target="_blank" className = "myurl blue" href = "https://www.chennaivolunteers.org">Chennai Volunteers</a>, an online micro-volunteering portal for the city of Chennai with the <a target="_blank" className = "myurl blue" href = "https://givingmatters.in">Giving Matters Foundation</a><br />
                  <a target="_blank" className = "myurl blue" href = "https://pricemydata.com">PriceMyData</a>, an online platform for crowdsourcing data valuations <br /> <br />
                  <a target="_blank" className = "myurl blue" href = "https://github.com/raghavmecheri/GenerateRubric">GenerateRubric</a>, a solution to autogenerate grading rubrics for instructors and teaching assistants <br /> <br />
                  <a target="_blank" className = "myurl blue" href = "https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa">Porting BIM Models to low-cost Virtual Reality</a> - built @ <a target="_blank" className = "myurl blue" href="https://www.iitm.ac.in/">IIT, Madras</a> under Prof. Ashwin Mahalingam<br /><br />
