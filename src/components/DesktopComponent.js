@@ -34,7 +34,8 @@ class DesktopComponent extends Component {
             <div id = "projectContent">
                <h3 id = "header">Projects</h3>
                <p className = "rightContent">
-                 <a target="_blank" className = "myurl blue" href = "https://binit.in/wasteClassify">WasteClassify</a>, an AI based automated waste segregation solution with <a target="_blank" className = "myurl blue" href = "https://binit.in">BinIt</a><br />
+                 <a target="_blank" className = "myurl blue" href = "https://github.com/binitai/betterloader">BetterLoader</a>, an open source augmentation of the <a target="_blank" className = "myurl blue" href = "https://pytorch.org/">PyTorch</a> DataLoader.<br />
+                 <a target="_blank" className = "myurl blue" href = "https://binit.in/">WasteClassify</a>, an AI based automated waste segregation solution with <a target="_blank" className = "myurl blue" href = "https://binit.in">BinIt</a><br />
                  <a target="_blank" className = "myurl blue" href = "https://www.chennaivolunteers.org">Chennai Volunteers</a>, an online micro-volunteering portal for the city of Chennai with the <a target="_blank" className = "myurl blue" href = "https://givingmatters.in">Giving Matters Foundation</a><br />
                  <a target="_blank" className = "myurl blue" href = "https://pricemydata.com">PriceMyData</a>, an online platform for crowdsourcing data valuations <br />
                  <a target="_blank" className = "myurl blue" href = "https://github.com/raghavmecheri/GenerateRubric">GenerateRubric</a>, a solution to autogenerate grading rubrics for instructors and teaching assistants <br />
