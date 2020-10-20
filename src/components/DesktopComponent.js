@@ -20,7 +20,7 @@ class DesktopComponent extends Component {
             </div>
             <hr className="myLine"/>
             <div id = "experience">
-               <p>Currently at <a target="_blank" className = "myurl blue" href="https://binit.in">BinIt</a> and <a target="_blank" className = "myurl blue" href="https://www.microsoft.com/en-in">Microsoft</a> (Incoming)</p>
+               <p>Currently at <a target="_blank" className = "myurl blue" href="https://binit.in">BinIt</a>, <a target="_blank" className = "myurl blue" href="http://www.cs.columbia.edu/~ansaf/cing/index.html">CING</a>, and <a target="_blank" className = "myurl blue" href="https://www.microsoft.com/en-in">Microsoft</a> (Incoming)</p>
                <p>Previously with <a target="_blank" className = "myurl blue" href = "https://vayu.tech">Vayu</a>, <a target="_blank" className = "myurl blue" href="https://www.paypal.com/us/home">PayPal</a>, <a target="_blank" className = "myurl blue" href="https://freshworks.com">Freshworks</a> and <a target="_blank" className = "myurl blue" href="https://coderdojo.com">CoderDojo</a></p>
             </div>
             <hr className="myLine"/>
@@ -53,8 +53,10 @@ class DesktopComponent extends Component {
                <h3 id = "header">Activities</h3>
                <p className = "rightContent">
                  Team Lead at <a target="_blank" className = "myurl blue" href = "https://binit.in">BinIt</a>, an AI startup focussed on solving the world's waste segregation problems<br />
-                 Teaching Assistant for COMS W3101 - Programming in JavaScript with <a target="_blank" className = "myurl blue" href = "https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa">Prof. Ramana Isukapalli</a><br />
-                 Check out <a target="_blank" className = "myurl blue" href="https://www.columbiadpi.com/">DPI</a>, <a target="_blank" className = "myurl blue" href="https://www.lionbase.nyc/">LionBase</a>, <a target="_blank" className = "myurl blue" href="http://www.columbiaseg.org/">CSEG</a>, <a target="_blank" className = "myurl blue" href="https://columbiainternationalventures.com/">CIV</a>, and <a target="_blank" className = "myurl blue" href="https://www.grcglobalgroup.com/">GRC</a><br />
+                 Research Assistant with Columbia's <a target="_blank" className = "myurl blue" href="http://www.cs.columbia.edu/~ansaf/cing/index.html"> Clinicial Infomatics Group</a>, working on the applications of NLP to healthcare<br />
+                 Teaching Assistant for COMS 3203 - Discrete Math with <a target="_blank" className = "myurl blue" href = "http://www.cs.columbia.edu/~ansaf/">Prof. Ansaf Salleb-Aouissi</a><br />
+                 Teaching Assistant (fmr.) for COMS 3101 - Programming in JavaScript with <a target="_blank" className = "myurl blue" href = "https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa">Prof. Ramana Isukapalli</a><br />
+                 Check out <a target="_blank" className = "myurl blue" href="https://www.columbiadpi.com/">DPI</a>, <a target="_blank" className="myurl blue" href="https://www.columbiabuildlab.com/">CBL</a>, <a target="_blank" className = "myurl blue" href="https://www.lionbase.nyc/">LionBase</a>, <a target="_blank" className = "myurl blue" href="http://www.columbiaseg.org/">CSEG</a>, <a target="_blank" className = "myurl blue" href="https://columbiainternationalventures.com/">CIV</a>, and <a target="_blank" className = "myurl blue" href="https://www.grcglobalgroup.com/">GRC</a><br />
                  View my courses completed, and currently being taken <a target="_blank" href="https://docs.google.com/document/d/1t84U6M0rCwHoXMBqXBh3OmVXqOs6WBZoRKjm7NoZDT8/edit?usp=sharing" className="myurl blue">here</a>
                </p>
                <br />
