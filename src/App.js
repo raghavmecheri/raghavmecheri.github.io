@@ -6,12 +6,6 @@ import DesktopComponent from "./components/DesktopComponent"
 
 const isMobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 
-function App() {
-  if(isMobile) {
-    return ( < MobileComponent /> )
-  } else {
-    return ( < DesktopComponent /> )
-  }
-}
+const App = () => isMobile ? <MobileComponent /> : <DesktopComponent />;
 
 export default App;

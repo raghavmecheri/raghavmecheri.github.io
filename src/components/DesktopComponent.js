@@ -26,7 +26,7 @@ class DesktopComponent extends Component {
             <hr className="myLine"/>
             <div id = "online">
                <a target="_blank" className = "logoContainer" href = "https://github.com/raghavmecheri"><img className = "logoImage" src = {require("../resources/github.png")} /></a>
-               <a target="_blank" className = "logoContainer" href = "https://www.linkedin.com/in/raghavmecheri/"><img className = "logoImage" src = {require("../resources/linkedin.png")} /></a>
+               <a target="_blank" className = "logoContainer" style={{ marginLeft: "5px", marginRight: "5px" }} href = "https://www.linkedin.com/in/raghavmecheri/"><img className = "logoImage" src = {require("../resources/linkedin.png")} /></a>
                <a target="_blank" className = "logoContainer" href = "https://www.facebook.com/raghavmecheri"><img className = "logoImage" src = {require("../resources/facebook.png")} /></a>
             </div>
          </div>
@@ -34,6 +34,7 @@ class DesktopComponent extends Component {
             <div id = "projectContent">
                <h3 id = "header">Projects</h3>
                <p className = "rightContent">
+                 <a target="_blank" className = "myurl blue" href = "https://github.com/raghavmecheri/ptjs/">ptjs</a>, a JavaScript wrapper for <a target="_blank" className = "myurl blue" href = "https://pytorch.org/">PyTorch</a><br />
                  <a target="_blank" className = "myurl blue" href = "https://github.com/binitai/betterloader">BetterLoader</a>, an open source augmentation of the <a target="_blank" className = "myurl blue" href = "https://pytorch.org/">PyTorch</a> DataLoader<br />
                  <a target="_blank" className = "myurl blue" href = "https://binit.in/">WasteClassify</a>, an AI based automated waste segregation solution with <a target="_blank" className = "myurl blue" href = "https://binit.in">BinIt</a><br />
                  <a target="_blank" className = "myurl blue" href = "https://www.chennaivolunteers.org">Chennai Volunteers</a>, an online micro-volunteering portal for the city of Chennai with the <a target="_blank" className = "myurl blue" href = "https://givingmatters.in">Giving Matters Foundation</a><br />
