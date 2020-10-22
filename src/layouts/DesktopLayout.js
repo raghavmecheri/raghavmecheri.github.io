@@ -9,7 +9,7 @@ class DesktopLayout extends Component {
 
 	render() {
       return (
-		<div id = "container">
+		<div id = "container" style={{ overflow: "hidden" }}>
          <div id = "left">
             <div id = "headshot">
                <img id = "raghav" src = {require("../resources/raghav.png")} />
@@ -31,7 +31,7 @@ class DesktopLayout extends Component {
                <a target="_blank" className = "logoContainer" href = "https://www.facebook.com/raghavmecheri"><img className = "logoImage" src = {require("../resources/facebook.png")} /></a>
             </div>
          </div>
-         <div id = "right">
+         <div id = "right" style={{ overflowY: "auto", height: "95vh" }}>
             <Content />
          </div>
       </div> 
