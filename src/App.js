@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import DesktopLayout from "./layouts/DesktopLayout"
 import MobileLayout from "./layouts/MobileLayout"
 
