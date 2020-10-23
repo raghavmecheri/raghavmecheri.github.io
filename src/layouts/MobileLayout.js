@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Content from "../resources/content";
 import "../styles/mobile.css"
 
-class MobileLayout extends Component {
-	constructor() {
-		super();
-	}
-
-	render() {
-		return (
-		<div id = "container">
+const MobileLayout = () => {
+   return (
+      <div id = "container">
          <div>
             <div id = "headshot">
                <img id = "raghav" src = {require("../resources/raghav.png")} />
@@ -36,7 +31,6 @@ class MobileLayout extends Component {
          </div>
       </div> 
       )
-	}
 }
 
 export default MobileLayout

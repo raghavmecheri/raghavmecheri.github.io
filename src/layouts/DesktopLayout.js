@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Content from "../resources/content";
 import "../styles/desktop.css"
 
-class DesktopLayout extends Component {
-	constructor() {
-		super();
-	}
-
-	render() {
-      return (
-		<div id = "container" style={{ overflow: "hidden" }}>
+const DesktopLayout = () => {
+   return (
+      <div id = "container" style={{ overflow: "hidden" }}>
          <div id = "left">
             <div id = "headshot">
                <img id = "raghav" src = {require("../resources/raghav.png")} />
@@ -35,8 +30,7 @@ class DesktopLayout extends Component {
             <Content />
          </div>
       </div> 
-      )
-	}
+   )
 }
 
 export default DesktopLayout
