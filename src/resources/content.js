@@ -2,7 +2,7 @@ import React from 'react';
 import ReactMarkdown from "react-markdown";
 
 const content = `
-## Projects
+## Recent Projects
 - [ptjs](https://github.com/raghavmecheri/ptjs/), a JavaScript wrapper for [PyTorch](https://pytorch.org/)
 - [BetterLoader](https://github.com/binitai/betterloader), an open source augmentation of the [PyTorch](https://pytorch.org/) DataLoader
 - WasteClassify, a Deep Learning based automated waste segregation solution with [BinIt](https://binit.in/)
