@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 const content = `
 ## Recent Projects
-- [ptjs](https://github.com/raghavmecheri/ptjs/), a JavaScript wrapper for [PyTorch](https://pytorch.org/)
+- [pytorchjs](https://github.com/raghavmecheri/pytorchjs/), a JavaScript wrapper for [PyTorch](https://pytorch.org/)
 - [BetterLoader](https://github.com/binitai/betterloader), an open source augmentation of the [PyTorch](https://pytorch.org/) DataLoader
 - WasteClassify, a Deep Learning based automated waste segregation solution with [BinIt](https://binit.in/)
 - [Chennai Volunteers](https://www.chennaivolunteers.org/), an online micro-volunteering portal for the [Giving Matters Foundation](https://givingmatters.in/)
