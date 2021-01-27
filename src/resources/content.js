@@ -26,7 +26,8 @@ const content = `
 - [Fixing the PyTorch Dataloader](https://towardsdatascience.com/fixing-the-pytorch-dataloader-990b336b8e5a)
 
 ## Slides/Presentations
-- [Building stuff that people care about](./slides/dpi/buildingstuff.html), for the Columbia Data Product Initiative
+- [Deploying an ML app - from idea to production](./slides/adi/deployinganmlapp.html), for [ADI](https://adicu.com/)'s mentorship program
+- [Building stuff that people care about](./slides/dpi/buildingstuff.html), for the [Columbia Data Product Initiative](https://www.columbiadpi.com/)
 `
 
 export default () => <ReactMarkdown source={content} />
