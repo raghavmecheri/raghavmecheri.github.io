@@ -26,6 +26,7 @@ const content = `
 - [Fixing the PyTorch Dataloader](https://towardsdatascience.com/fixing-the-pytorch-dataloader-990b336b8e5a)
 
 ## Slides/Presentations
+- [Am Overview of Image Segmentation](./slides/deeplearning/segmentation.html) for Prof [Peter Belhumeur](https://www.peterbelhumeur.com/)'s [Advanced Topics In Deep Learning](https://www.advancedtopicsindeeplearning.com/) class.
 - [An overview of AlexNet, VGG, and GoogLeNet](./slides/deeplearning/classification.html) for Prof [Peter Belhumeur](https://www.peterbelhumeur.com/)'s [Advanced Topics In Deep Learning](https://www.advancedtopicsindeeplearning.com/) class.
 - [Deploying an ML app - from idea to production](./slides/adi/deployinganmlapp.html), for [ADI](https://adicu.com/)'s mentorship program
 - [Building stuff that people care about](./slides/dpi/buildingstuff.html), for the [Columbia Data Product Initiative](https://www.columbiadpi.com/)
