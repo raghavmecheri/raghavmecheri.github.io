@@ -1,0 +1,311 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/white.min.css">
+   </head>
+   <body>
+      <div class="reveal">
+         <div class="slides">
+            <section>
+               <section>
+                  <h3>Image Segmentation</h3>
+                  Raghav Mecheri<br>
+                  COMSE6998: Advanced Topics in Deep Learning
+               </section>
+               <section>
+                  <h4>Papers:</h4>
+                  <ul>
+                     <li>Fully Convolutional Networks for Semantic Segmentation</li>
+                     <li>Mask R-CNN</li>
+                     <li>Learning to Segment Every Thing</li>
+                  </ul>
+               </section>
+            </section>
+            <section>
+               <section>
+                  Background
+               </section>
+               <section>
+                  <h5>Object Detection vs Image Segmentation</h5>
+                  <ul>
+                     <li>
+                        Object Detection: What are the multiple items in my image? (predicts bounding boxes)
+                     </li>
+                     <li>
+                        Image Segmentation: Can I identify images pixel by pixel? (predicts masks for images)
+                     </li>
+                     <li>
+                        Note: In most cases, you predict based on categories (so there's also an implicit classification step -- well, sometimes)
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  <h5>Semantic Segmentation vs Instance Segmentation</h5>
+                  <ul>
+                     <li>
+                        Semantic Segmentation: Two objects with the same label are not differentiated
+                     </li>
+                     <li>
+                        Instance Segmentation: All objects are considered distinct, regardless of their label
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  <img src="https://miro.medium.com/max/800/1*SNvD04dEFIDwNAqSXLQC_g.jpeg"></img>
+               </section>
+            </section>
+            <section>
+               <section>
+                  Fully Convolutional Networks for Semantic Segmentation
+               </section>
+               <section>
+                  Introduction & Contributions
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        The authors show that a fully convolutional network (FCN), trained end-to-end, pixels-to-pixels on semantic segmentation exceeds the state-of-the-art without further machinery.
+                     </li>
+                     <li>
+                        The authors' model transfers recent success in classification to dense prediction by reinterpreting classification nets as fully convolutional and fine-tuning from their learned representations.
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        The authors define a novel “skip” architecture to combine deep, coarse, semantic information and shallow, fine, appearance information (more later)
+                     </li>
+                     <li>
+                        Their fully convolutional network achieves state-of-the-art segmentation of PASCAL VOC (20% relative improvement to 62.2% mean IU [intersection over unions] on 2012), while inference takes less than one fifth of a second for a typical image.
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  Fully Convolutional Networks
+                  <ul>
+                     <li>
+                        We actually discussed a lot of this, when we talked about dense evaluation in my last presentation :)
+                     </li>
+                     <li>
+                        Motivation: We want to be able to connect the coarse, overall, feature map outputs back to the dense pixel information. 
+                     </li>
+                     <li>
+                        Some methods that the authors mention are as follows
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        Adapting CNNs: Consider the FC layers to be convolutional layers with kernels that cover the entire input region
+                     </li>
+                     <li>
+                        Shift and Stitch: Input shifting and output interlacing is a trick that yields dense predictions from coarse outputs without interpolation -- if I consider shifted inputs for every value of (x,y) in a set, then I get a set of outputs based on the central portion of their receptive fields. Found to be effective and efficient.
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        Upsampling: A way to think about this is de-convolution based on the output maps, optimised over a pixel-loss. Found to be effective and efficient.
+                     </li>
+                     <li>
+                        Patchwise Training: The authors attempt to use patchwise, randomised training in order to boost the performance of the model. However, there was no significant performance gain found. 
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  Architecture
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        The authors cast ILSVRC classifiers into FCNs and augment them for dense prediction with in-network upsampling and a pixelwise loss. They then train for segmentation by fine-tuning. 
+                     </li>
+                     <li>
+                        They also built a novel skip architecture that combines coarse, semantic and local, appearance information to refine prediction.
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  The Novel Skip Architecture: A new FCN
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        The outputs obtained from casting SoTA classifiers into FCN was dissatisfyingly coarse
+                     </li>
+                     <li>
+                        How did they fix this? They essentially turned their NN into a DAG, with connections that skipped whole layers
+                     </li>
+                     <li>
+                        Combining fine layers and coarse layers lets the model make local predictions that respect global structure
+                     </li>
+                     <li>
+                        Note: FCN-X is an FCN with a pixel stride of X. The authors trained nets with strides of 8, 16 and 32.
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  <img src="https://i.imgur.com/YbhQ0p6.png">
+               </section>
+               <section>
+                  Training
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        SGD, with momentum
+                     </li>
+                     <li>
+                        Dropout was retained where used in the original nets
+                     </li>
+                     <li>
+                        Fully convolutional training can balance classes by weighting or sampling the loss -- class balancing was deemed unnecessary
+                     </li>
+                     <li>
+                        Augmentation yielded no noticable improvement
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  Results
+               </section>
+               <section>
+                  Note: IU --> "Intersection over union" == Jaccard Distance --> Area of overlap between the training mask and the predicted mask / Union area between the two masks! (Intuitively, this is 1 when the mask is perfect)
+               </section>
+               <section>
+                  <img src="https://i.imgur.com/I2NOye7.png">
+               </section>
+               <section>
+                  <img src="https://i.imgur.com/NhPqquJ.png">
+               </section>
+               <section>
+                  Conclusion
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        This is the first work to train FCNs end-to-end (1) for pixelwise prediction and (2) from super- vised pre-training
+                     </li>
+                     <li>
+                        In my opinion, segmentation is pretty useful (how often do we see perfect, unobscured images in the real world?)
+                     </li>
+                     <li>
+                        They actually performed experiments for both instance and semantic segmentation, but the focus was on semantic segmentation
+                     </li>
+                  </ul>
+               </section>
+            </section>
+            </section>
+            <section>
+               <section>
+                  Mask R-CNN
+               </section>
+               <section>
+                  Introduction & Contributions
+               </section>
+               <section>
+                  <ul>
+                     <li>"A conceptually simple, flexible, and general framework for object instance segmentation"</li>
+                     <li>An extension of Faster R-CNN, which is a part of a family of region based convnets</li>
+                     <li>Mask R-CNN adds a branch for predicting segmentation masks on each Region of Interest (RoI), in parallel with the existing branch for classification and bounding box regression</li>
+                  </ul>
+               </section>
+               <section>
+                  The Concept
+               </section>
+               <section>
+                  Mask R-CNN is conceptually simple: Faster R-CNN has two outputs for each candidate object, a class label and a bounding-box offset; to this the authors add a third branch that outputs the object mask.
+               </section>
+               <section>
+                  But, this additional branch requires the extraction of much finer information to produce the output.
+               </section>
+               <section>
+                  Hence, the key additions to Mask R-CNN are things like pixel-to-pixel allignment, in order to make this possible
+               </section>
+               <section>
+                  How?
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        A multi task loss, based on all 3 branches (classification, bounding box, and segmentation)
+                     </li>
+                     <li>
+                        RoIAlign: A novel layer built to remove the harsh quantization that the R-CNN RoiPool layer causes --> essentially, this allows for the CNN to properly allign the extracted features with the input 
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  Architecture
+               </section>
+               <section>
+                  <ul>
+                     <li>
+                        Mask R-CNN is instantiated with multiple architectures - ResNet, ResNeXt, Feature Pyramid Network (FPN: a top-down architecture with lateral connections to build an in-network feature pyramid from a single-scale input. This allows us to extract RoI features from different layers of this feature pyramid)
+                     </li>
+                  </ul>
+               </section>
+               <section>
+                  <img src="https://i.imgur.com/ELVrmTd.png">
+               </section>
+               <section>
+                  Training
+               </section>
+               <section>
+                  Known configurations from the Faster R-CNN training were mimicked, and the model proved to be robust and performed well
+               </section>
+               <section>Results</section>
+               <section>Note: AP -- Average Precision. Now, this metric is based on IU, and average precision is based on IU over all thresholds. Also, AP75 is based on 75% IU, and so on</section>
+               <section>
+                  <img src="https://i.imgur.com/DWp2MfA.png">
+               </section>
+               <section>Conclusion</section>
+               <section>
+                  <ul>
+                     <li>
+                        State of the art, and is still commonly used
+                     </li>
+                     <li>
+                        Instance Segmentation based
+                     </li>
+                  </ul>
+               </section>
+            </section>
+            <section>
+               <section>
+                  Learning to Segment Everything
+               </section>
+               <section>
+                  The premise of this paper is partially supervised instance segmentation
+               </section>
+               <section>
+                  These contributions allow us to train Mask R-CNN to detect and segment 3000 visual concepts using box annotations from the Visual Genome dataset and mask annotations from the 80 classes in the COCO dataset.
+               </section>
+               <section>
+                  How? We train a parameterized weight transfer function that is trained to predict a category’s instance segmentation parameters as a function of its bounding box detection parameters. 
+               </section>
+               <section>
+                  Why? Because manually segmenting images is really hard and really expensive. Bounding boxes are a lot easier, and a lot more common.
+               </section>
+               <section>
+                  <img src="https://i.imgur.com/Q0VypB1.png">
+               </section>
+               <section>
+                  This is a fairly novel approach to transfer learning, where we're essentially using a function to map weights for one task, to that of another 
+               </section>
+               <section>
+                  Using this approach, the authors built a large-scale instance segmentation model over 3000 classes in the Visual Genome dataset -- something that would not even be possible due to the sheer cost of 3000 segmentation classes.
+               </section>
+               <section>The architecture was evaluated by running the model on two splits of COCO. While the partially supervised approach did not exceed the Mask R-CNN upper bound considered (which is impossible, unless the weight learning somehow improves the mask prediction), the results were extremely promising</section>
+            </section>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+      <script>
+         Reveal.initialize();
+      </script>
+   </body>
+</html>
