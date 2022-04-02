@@ -16,8 +16,8 @@ const DesktopLayout = () => {
             </div>
             <hr className="myLine"/>
             <div id = "experience">
-               <p>Currently at <a target="_blank" className = "myurl blue" href="https://binit.in">BinIt</a>, <a target="_blank" className = "myurl blue" href="http://www.cs.columbia.edu/~ansaf/cing/index.html">CING</a>, and <a target="_blank" className = "myurl blue" href="https://www.microsoft.com/en-in">Microsoft</a> (Incoming)</p>
-               <p>Previously with <a target="_blank" className = "myurl blue" href = "https://vayu.tech">Vayu</a>, <a target="_blank" className = "myurl blue" href="https://www.paypal.com/us/home">PayPal</a>, <a target="_blank" className = "myurl blue" href="https://freshworks.com">Freshworks</a> and <a target="_blank" className = "myurl blue" href="https://coderdojo.com">CoderDojo</a></p>
+               <p>Currently building <a target="_blank" className = "myurl blue" href="https://binit.in">BinIt</a></p>
+               <p>Previously at <a target="_blank" className = "myurl blue" href="https://www.microsoft.com/en-in">Microsoft</a>, <a target="_blank" className = "myurl blue" href = "https://vayu.tech">Vayu</a>, <a target="_blank" className = "myurl blue" href="https://www.paypal.com/us/home">PayPal</a>, <a target="_blank" className = "myurl blue" href="https://freshworks.com">Freshworks</a> and <a target="_blank" className = "myurl blue" href="https://coderdojo.com">CoderDojo</a></p>
             </div>
             <hr className="myLine"/>
             <div id = "online">
