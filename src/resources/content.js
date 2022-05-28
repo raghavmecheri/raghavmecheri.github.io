@@ -19,11 +19,12 @@ const content = `
 - Teaching Assistant (fmr.) for COMS 3101 - Programming in JavaScript with [Prof. Ramana Isukapalli](https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa)
 - Check out [DPI](https://www.columbiadpi.com/), [CBL](https://www.columbiabuildlab.com/), [LionBase](https://www.lionbase.nyc/), [CSEG](http://www.columbiaseg.org/), [CIV](https://columbiainternationalventures.com/), and [GRC](https://www.grcglobalgroup.com/)
 
+## Posts + Mentions
+- [Announcing BinIt’s Pre-Seed Raise](https://medium.com/@binitai/announcing-binits-pre-seed-raise-b797ed78be67)
+- [Fixing the PyTorch Dataloader](https://towardsdatascience.com/fixing-the-pytorch-dataloader-990b336b8e5a)
+
 ## Publications
 - [Porting BIM Models to low-cost Virtual Reality](https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa) - built @ [IIT, Madras](https://www.iitm.ac.in/) under Prof. Ashwin Mahalingam
-
-## Posts
-- [Fixing the PyTorch Dataloader](https://towardsdatascience.com/fixing-the-pytorch-dataloader-990b336b8e5a)
 
 ## Slides/Presentations
 - [Am Overview of Image Segmentation](./slides/deeplearning/segmentation.html) for Prof [Peter Belhumeur](https://www.peterbelhumeur.com/)'s [Advanced Topics In Deep Learning](https://www.advancedtopicsindeeplearning.com/) class.
