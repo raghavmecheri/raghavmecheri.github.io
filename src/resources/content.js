@@ -13,6 +13,7 @@ const content = `
 - Web application to aggregate and analyse housing complaints in NYC - built with [CSEG Tech](http://www.columbiaseg.org/cseg-tech)
 
 ## Activities
+- Teaching Assistant (fmr.) for COMS 4774 - Unsupervised Learning with [Prof. Nakul Verma](http://www.cs.columbia.edu/~verma/)
 - Teaching Assistant (fmr.) for COMS 4771 - Machine Learning with [Prof. Nakul Verma](http://www.cs.columbia.edu/~verma/)
 - Research Assistant (fmr.) with Columbia's [Clinicial Infomatics Group](http://www.cs.columbia.edu/~ansaf/cing/index.html), working on applications of NLP in healthcare
 - Teaching Assistant (fmr.) for COMS 3203 - Discrete Math with [Prof. Ansaf Salleb-Aouissi](http://www.cs.columbia.edu/~ansaf/)
