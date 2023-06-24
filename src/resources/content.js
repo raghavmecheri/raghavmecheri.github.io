@@ -20,6 +20,7 @@ const content = `
 - Check out [DPI](https://www.columbiadpi.com/), [CBL](https://www.columbiabuildlab.com/), [LionBase](https://www.lionbase.nyc/), [CSEG](http://www.columbiaseg.org/), [CIV](https://columbiainternationalventures.com/), and [GRC](https://www.grcglobalgroup.com/)
 
 ## Posts + Mentions
+- [Of Dropouts and College Founders](https://rmecheri.medium.com/starting-up-by-staying-in-of-dropouts-and-college-founders-fd395cf08654)
 - [Announcing BinIt’s Pre-Seed Raise](https://medium.com/@binitai/announcing-binits-pre-seed-raise-b797ed78be67)
 - [Fixing the PyTorch Dataloader](https://towardsdatascience.com/fixing-the-pytorch-dataloader-990b336b8e5a)
 
