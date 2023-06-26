@@ -7,7 +7,7 @@ const DesktopLayout = () => {
       <div id = "container" style={{ overflow: "hidden" }}>
          <div id = "left">
             <div id = "headshot">
-               <img id = "raghav" src = {require("../resources/raghav.png")} />
+               <img id = "raghav" src = {require("../resources/raghav.jpeg")} />
                <h2 style={{ textAlign: "center" }}>Raghav Mecheri</h2>
             </div>
             <hr className="myLine"/>
