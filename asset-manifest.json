@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.891d14a2.chunk.css",
-    "main.js": "/static/js/main.ed68a24e.chunk.js",
-    "main.js.map": "/static/js/main.ed68a24e.chunk.js.map",
+    "main.js": "/static/js/main.603fa44e.chunk.js",
+    "main.js.map": "/static/js/main.603fa44e.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.274792db.chunk.js": "/static/js/2.274792db.chunk.js",
     "static/js/2.274792db.chunk.js.map": "/static/js/2.274792db.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e1aed6872984d3455a050599313b0e5c.js": "/precache-manifest.e1aed6872984d3455a050599313b0e5c.js",
+    "precache-manifest.42c9b443f082b2ac6de2b9ba5f3a9399.js": "/precache-manifest.42c9b443f082b2ac6de2b9ba5f3a9399.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.891d14a2.chunk.css.map": "/static/css/main.891d14a2.chunk.css.map",
     "static/media/github.png": "/static/media/github.9b5a1369.png",
     "static/media/linkedin.png": "/static/media/linkedin.ebfd2a04.png",
-    "static/media/raghav.png": "/static/media/raghav.3984cf92.png"
+    "static/media/raghav.jpeg": "/static/media/raghav.fbb7566e.jpeg"
   }
 }
