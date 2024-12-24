@@ -1,8 +1,25 @@
 import React from 'react';
 import ReactMarkdown from "react-markdown";
 
+const base = () => {
+    const pathparts = location.pathname.split('/');
+    if (location.host == 'localhost') {
+        var url = location.origin+'/'+pathparts[1].trim('/')+'/';
+    }else{
+        var url = location.origin;
+    }
+    return url;
+}
+
+const DROPOUTS = base() + "/notes/dropouts";
+
 const content = `
-## Recent Projects
+## Posts
+- [Visia: Our Seed Financing & Vision For Inbound Visibility](https://medium.com/binit-ai/visia-our-seed-financing-vision-for-inbound-visibility-7fb4e62a8f79)
+- [Of Dropouts and College Founders](${DROPOUTS})
+- [Announcing BinIt’s Pre-Seed Raise](https://medium.com/@binitai/announcing-binits-pre-seed-raise-b797ed78be67)
+
+## Projects
 - [pytorchjs](https://github.com/raghavmecheri/pytorchjs/), a JavaScript wrapper for [PyTorch](https://pytorch.org/)
 - [BetterLoader](https://github.com/binitai/betterloader), an open source augmentation of the [PyTorch](https://pytorch.org/) DataLoader
 - [Chennai Volunteers](https://www.chennaivolunteers.org/), an online micro-volunteering portal for the [Giving Matters Foundation](https://givingmatters.in/)
@@ -19,11 +36,6 @@ const content = `
 - Teaching Assistant (fmr.) for COMS 3101 - Programming in JavaScript with [Prof. Ramana Isukapalli](https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa)
 - Check out [DPI](https://www.columbiadpi.com/), [CBL](https://www.columbiabuildlab.com/), [LionBase](https://www.lionbase.nyc/), [CSEG](http://www.columbiaseg.org/), [CIV](https://columbiainternationalventures.com/), and [GRC](https://www.grcglobalgroup.com/)
 
-## Posts + Mentions
-- [Of Dropouts and College Founders](https://rmecheri.medium.com/starting-up-by-staying-in-of-dropouts-and-college-founders-fd395cf08654)
-- [Announcing BinIt’s Pre-Seed Raise](https://medium.com/@binitai/announcing-binits-pre-seed-raise-b797ed78be67)
-- [Fixing the PyTorch Dataloader](https://towardsdatascience.com/fixing-the-pytorch-dataloader-990b336b8e5a)
-
 ## Publications
 - [Porting BIM Models to low-cost Virtual Reality](https://www.slideshare.net/slideshow/embed_code/key/fBotytSv48MnSa) - built @ [IIT, Madras](https://www.iitm.ac.in/) under Prof. Ashwin Mahalingam
 
@@ -34,4 +46,4 @@ const content = `
 - [Building stuff that people care about](./slides/dpi/buildingstuff.html), for the [Columbia Data Product Initiative](https://www.columbiadpi.com/)
 `
 
-export default () => <ReactMarkdown source={content} />
+export default () => <ReactMarkdown>{content}</ReactMarkdown>
