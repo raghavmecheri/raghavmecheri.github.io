@@ -2,10 +2,232 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://raghavmecheri.com">
-    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghav Mecheri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #e4e4e7;
+            background-color: #1c1c1c;
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .profile-img {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+            filter: grayscale(20%);
+        }
+
+        .header-text h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #fafafa;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact {
+            font-size: 0.875rem;
+            color: #d4d4d8;
+        }
+
+        .contact a {
+            color: #d4d4d8;
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        .contact a:hover {
+            color: #fafafa;
+        }
+
+        .contact .separator {
+            margin: 0 0.5rem;
+            color: #52525b;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #52525b;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #27272a;
+        }
+
+        /* Links list */
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        li a {
+            color: #d4d4d8;
+            text-decoration: none;
+            transition: color 0.15s ease;
+            display: inline-block;
+        }
+
+        li a:hover {
+            color: #fafafa;
+        }
+
+        li a::before {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 1px;
+            background-color: #71717a;
+            vertical-align: middle;
+            margin-right: 0;
+            transition: width 0.2s ease, margin-right 0.2s ease;
+        }
+
+        li a:hover::before {
+            width: 12px;
+            margin-right: 8px;
+        }
+
+        .item-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: #52525b;
+            margin-left: 0.5rem;
+        }
+
+        /* WIP note */
+        .wip {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: #3f3f46;
+            letter-spacing: 0.02em;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            body {
+                padding: 2.5rem 1.25rem;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .profile-img {
+                width: 64px;
+                height: 64px;
+            }
+
+            .wip {
+                position: static;
+                margin-top: 3rem;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to <a href="https://raghavmecheri.com">raghavmecheri.com</a>...</p>
+    <header>
+        <img src="static/profile.png" alt="Raghav Mecheri" class="profile-img">
+        <div class="header-text">
+            <h1>Raghav Mecheri</h1>
+            <div class="contact">
+                <span class="email">rmecheri[at]visia[dot]ai</span>
+                <span class="separator">/</span>
+                <a href="https://www.linkedin.com/in/raghavmecheri/" target="_blank" rel="noopener">linkedin</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2 class="section-title">Writing</h2>
+        <ul>
+            <li>
+                <a href="https://medium.com/binit-ai/visia-our-seed-financing-vision-for-inbound-visibility-7fb4e62a8f79" target="_blank" rel="noopener">Visia: Our Seed Financing & Vision For Inbound Visibility</a>
+                <span class="item-meta">2024</span>
+            </li>
+            <li>
+                <a href="notes/StartingUp.html">Starting up by Staying In: Dropouts and College Founders</a>
+            </li>
+            <li>
+                <a href="https://medium.com/binit-ai/announcing-binits-pre-seed-raise-b797ed78be67" target="_blank" rel="noopener">Announcing BinIt's Pre-Seed</a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Talks</h2>
+        <ul>
+            <li>
+                <a href="slides/dpi/buildingstuff.html">Building Stuff That People Care About</a>
+                <span class="item-meta">Columbia DPI</span>
+            </li>
+            <li>
+                <a href="slides/adi/deployinganmlapp.html">Deploying ML Applications In Production</a>
+                <span class="item-meta">Columbia ADI</span>
+            </li>
+            <li>
+                <a href="slides/deeplearning/classification.html">Deep Learning: Image Classification</a>
+                <span class="item-meta">COMS 6998</span>
+            </li>
+            <li>
+                <a href="slides/deeplearning/segmentation.html">Deep Learning: Image Segmentation</a>
+                <span class="item-meta">COMS 6998</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Notes</h2>
+        <ul>
+            <li>
+                <a href="notes/MyWorkHours.html">I work strange hours, please don't feel rushed to reply</a>
+            </li>
+            <li>
+                <a href="notes/Nit.html">nit:</a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="wip">always a wip</div>
 </body>
 </html>
